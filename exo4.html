@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP DOM - Exo 4</title>
+    <link rel="stylesheet" href="assets/css/exo4.css">
+</head>
+<body>
+    <div>
+        <img src="assets/images/image1.jpg" alt="foret" onmouseover="alertOnImg()">
+    </div>
+
+    <button type="button" onclick="buttonAlert()">Cliquer ici pour afficher une alerte</button>
+    <button type="button" onclick="changeBackgroundColor()">Changer la couleur de fond</button>
+    <button type="button" id="button_background" onclick="changeButtonLook()">Changer l'apparence du bouton</button>
+    <button type="button" onclick="resetAllChanges()">Annuler les modifications</button>
+
+    <div class="active" id="img2" onmouseover="changeImg()" onmouseout="resetImg()">
+        <img src="assets/images/image2.jpg" alt="flowers">
+    </div>
+    <div class="hidden" id="img3" onmouseover="changeImg()" onmouseout="resetImg()">
+        <img src="assets/images/image3.jpg" alt="fog" >
+    </div>
+    
+    <script src="assets/js/exo4.js"></script>
+</body>
+</html>
