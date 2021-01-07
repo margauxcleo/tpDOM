@@ -1,0 +1,19 @@
+Un premier controle de formulaire
+1. Ecrire une page HTML comportant un mini-formulaire compos´e d'un champ de saisie et d'un ´
+simple bouton. 
+2. Creer un fichier exo1.js 
+3. Rajouter l'instruction precedente par :
+function controler() {
+var zoneSaisie = document.getElementById("zoneSaisie");
+alert("La Zone de saisie contient : " + zoneSaisie.value);
+}
+Decrivez le code de cette fonction. Il faudrait maintenant associer ce code de controle a l'evenement
+click sur le bouton du formulaire. Ecrivez le code correspondant.
+4. Modifier la fonction de controle pour afficher un message d'erreur lorsque le champ est vide, et
+afficher le contenu du champ lorsqu'il ne l'est pas.
+5. La fonction eval, prenant en parametre une chaıne de caracteres representant une expression,
+permet d'evaluer cette derniere. Par exemple :
+eval("3+4"); // retourne la valeur 7
+eval("bon"+"jour"); //retourne bonjour
+Ajouter (concatenez) le resultat de l´evaluation de l'expression donn´ee par l'utilisateur dans le
+champ de saisie a votre affichage. Cela donne une page HTML contenant un formulaire permettant d'executer "online" de petites operations.
